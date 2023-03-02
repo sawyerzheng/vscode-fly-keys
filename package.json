@@ -22,7 +22,7 @@
       "properties": {
         "flyKeys.command.a": {
           "type": "string",
-          "default": "editor.action.showHover",
+          "default": "workbench.action.showCommands",
           "description": "in command mode type a excute command"
         },
         "flyKeys.command.b": {
@@ -164,6 +164,21 @@
           "type": "string",
           "default": "editor.action.goToDeclaration",
           "description": "in command mode type , excute command"
+        },
+        "flyKeys.command.\n": {
+          "type": "string",
+          "default": "editor.action.insertLineAfter",
+          "description": "in command mode type , excute command"
+        },
+        "flyKeys.command.I": {
+          "type": "string",
+          "default": "scrollPageUp",
+          "description": "in command mode type , excute command"
+        },
+        "flyKeys.command.K": {
+          "type": "string",
+          "default": "scrollPageDown",
+          "description": "in command mode type , excute command"
         }
       }
     },
@@ -195,10 +210,13 @@
     "@types/mocha": "^5.2.6",
     "@types/node": "^12.12.0",
     "@types/vscode": "^1.32.0",
+    "eslint": "^7.1.0",
     "glob": "^7.1.4",
     "mocha": "^6.1.4",
-    "eslint": "^7.1.0",
     "typescript": "^4.0.2",
     "vscode-test": "^1.3.0"
+  },
+  "dependencies": {
+    "vsce": "^2.15.0"
   }
 }
